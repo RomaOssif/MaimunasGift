@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBlock x:Name="TestBlock1" Text="started the app" 
+                   FontSize="40"
+                   TextAlignment="Center"
+                   VerticalAlignment="Center"/>
+        <Button Width="150" Height="60" VerticalAlignment="Bottom" Margin="20" Click="Button_Click"/>
 
     </Grid>
 </Window>

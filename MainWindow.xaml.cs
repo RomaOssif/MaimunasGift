@@ -20,4 +20,21 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+
+    //private void Sleep()
+    //{
+    //    Thread.Sleep(4000);
+    //    //zzz...
+    //}
+
+    private async void Button_Click(object sender, RoutedEventArgs e)
+    {
+        Task.Delay(2000).Wait(); //it may be our hope, tho the app will be freezing. still...
+        //Sleep();
+
+        TestBlock1.Text = "Aha it has changed";
+
+
+
+    }
 }
