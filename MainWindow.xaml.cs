@@ -9,13 +9,20 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private async void Button_Click(object sender, RoutedEventArgs e)
+    private async Task WaitABit()
     {
-        Task.Delay(2000).Wait();
+        await Task.Delay(1000);
+    }
 
-        TestBlock1.Text = "Aha it has changed";
+    private async Task BSMethod()
+    {
+        await WaitABit();
 
+        TestBlock1.Text = "Hurray it has changed";
+    }
 
-
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        BSMethod();
     }
 }

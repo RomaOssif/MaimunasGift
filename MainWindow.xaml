@@ -11,7 +11,7 @@
                    FontSize="40"
                    TextAlignment="Center"
                    VerticalAlignment="Center"/>
-        <Button Height="auto" Width="auto" MaxHeight="30" MaxWidth="30" VerticalAlignment="Bottom" Margin="20" Click="Button_Click">
+        <Button Height="150" Width="200" MaxHeight="200" MaxWidth="200" VerticalAlignment="Bottom" Margin="10" Click="Button_Click">
             <Image Source="/Photos for gift testing/simple-present-box-vector-icon-800x566.jpg"/>
         </Button>
 
