@@ -9,20 +9,10 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private async Task WaitABit()
+    private async void Button_Click(object sender, RoutedEventArgs e)
     {
         await Task.Delay(1000);
-    }
-
-    private async Task BSMethod()
-    {
-        await WaitABit();
 
         TestBlock1.Text = "Hurray it has changed";
-    }
-
-    private void Button_Click(object sender, RoutedEventArgs e)
-    {
-        BSMethod();
     }
 }
