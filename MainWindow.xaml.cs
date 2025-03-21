@@ -1,6 +1,7 @@
 ﻿using System.Media;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace MaimunasGift;
 
@@ -27,7 +28,10 @@ public partial class MainWindow : Window
 
         PlayMusic();
 
+        var uri = new Uri("pack://application:,,,/MaimunasGift;component/Images/gift_opened.png");
 
-        TestBlock1.Text = "Murka???";
+        imgPresent.Source = new BitmapImage(uri);
+
+        TestBlock1.Text = "Murka?? That's not yours!";
     }
 }

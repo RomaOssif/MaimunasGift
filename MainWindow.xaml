@@ -24,7 +24,7 @@
                 Background="Transparent"
                 Margin="10,10,10,30"
                 Click="Button_Click">
-            <Image Stretch="Uniform" Source="/Images/istockphoto-1346537713-612x612.jpg" />
+            <Image Name="imgPresent" Stretch="Uniform" Source="/Images/25620864.jpg" />
         </Button>
 
     </Grid>
