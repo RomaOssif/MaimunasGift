@@ -6,12 +6,15 @@
         xmlns:local="clr-namespace:MaimunasGift"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000" ResizeMode="CanMinimize"
-        Icon="/Images/25620864_kEm_icon.ico">
+        Icon="/Images/25620864_kEm_icon.ico"
+        Top="160"
+        Left="360">
     <Grid>
-        <TextBlock x:Name="TestBlock1" Text="started the app" 
+        <TextBlock x:Name="TestBlock1" Text="Happy birthday!" 
                    FontSize="40"
                    Height="100"
                    Width="500"
+                   Margin="50"
                    TextAlignment="Center"
                    VerticalAlignment="Top"/>
         <Button VerticalAlignment="Bottom"
