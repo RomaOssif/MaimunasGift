@@ -78,10 +78,10 @@ public partial class MainWindow : Window
         await Task.Delay(3000);
 
         UpdateMurkasDialog(":3");
-        await Task.Delay(3000);
+        await Task.Delay(1500);
 
         UpdateMurkasDialog("Crushing the app\nUwU");
-        await Task.Delay(4000);
+        await Task.Delay(1000);
         Application.Current.Shutdown();
 
     }
