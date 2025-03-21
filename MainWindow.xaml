@@ -5,14 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MaimunasGift"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="1000" ResizeMode="CanMinimize"
+        Icon="/Images/25620864_kEm_icon.ico">
     <Grid>
         <TextBlock x:Name="TestBlock1" Text="started the app" 
                    FontSize="40"
+                   Height="100"
+                   Width="500"
                    TextAlignment="Center"
-                   VerticalAlignment="Center"/>
-        <Button Height="150" Width="200" MaxHeight="200" MaxWidth="200" VerticalAlignment="Bottom" Margin="10" Click="Button_Click">
-            <Image Source="/Photos for gift testing/simple-present-box-vector-icon-800x566.jpg"/>
+                   VerticalAlignment="Top"/>
+        <Button VerticalAlignment="Bottom"
+                BorderThickness="0"
+                Height="300"
+                Width="300"
+                Background="Transparent"
+                Margin="10,10,10,30"
+                Click="Button_Click">
+            <Image Stretch="Uniform" Source="/Images/istockphoto-1346537713-612x612.jpg" />
         </Button>
 
     </Grid>
