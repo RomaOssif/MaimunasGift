@@ -16,11 +16,10 @@
             <ColumnDefinition Width="25*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Name="gridDialogMe" Grid.Column="0">
+        <Grid Name="gridDialogMe" Grid.Column="0" Opacity="0">
             <Image Source="/Images/Speech_bubble.svg.png" Height="400" Stretch="Fill"/>
 
-            <TextBlock
-                Text="Murka?? that's not yours!" 
+            <TextBlock Name="tbMyDialog"
                 FontSize="40"
                 Height="270"
                 Margin="10 20 10 10"
@@ -31,7 +30,19 @@
                 Width="180"/>
         </Grid>
 
-        <Grid x:Name="gridDialogCat" Grid.Column="2"/>
+        <Grid x:Name="gridDialogCat" Grid.Column="2" Opacity="0">
+            <Image Source="/Images/Speech_bubble.svg.png" Height="400" Stretch="Fill"/>
+
+            <TextBlock Name="tbMurkasDialog"
+                FontSize="40"
+                Height="270"
+                Margin="10 20 10 10"
+                TextAlignment="Center"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                TextWrapping="Wrap"
+                Width="180"/>
+        </Grid>
 
         <Grid Grid.Column="1" Name="mainGrid">
             <Grid.RowDefinitions>

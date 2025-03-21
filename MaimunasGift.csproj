@@ -12,6 +12,7 @@
     <None Remove="Images\25620864.jpg" />
     <None Remove="Images\25620864_kEm_icon.ico" />
     <None Remove="Images\gift_PNG100279.png" />
+    <None Remove="Images\photo_2025-03-21_14-33-06.jpg" />
     <None Remove="Images\Speech_bubble.svg.png" />
     <None Remove="Sounds\Deltarune-Chapter-2-OST--05---Queen.wav" />
   </ItemGroup>
@@ -29,6 +30,9 @@
     <Resource Include="Images\25620864_kEm_icon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+	<Content Include="Images\photo_2025-03-21_14-33-06.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
     <Content Include="Sounds\Deltarune-Chapter-2-OST--05---Queen.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
