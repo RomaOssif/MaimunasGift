@@ -5,27 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MaimunasGift"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000" ResizeMode="CanMinimize"
+        Title="MainWindow" Height="600" Width="1100" ResizeMode="CanMinimize"
         Icon="/Images/25620864_kEm_icon.ico"
         Top="160"
         Left="360">
     <Grid>
-        <TextBlock x:Name="TestBlock1" Text="Happy birthday!" 
-                   FontSize="40"
-                   Height="100"
-                   Width="500"
-                   Margin="50"
-                   TextAlignment="Center"
-                   VerticalAlignment="Top"/>
-        <Button VerticalAlignment="Bottom"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="gridDialogMe" Grid.Column="0">
+            <Image Source="/Images/Speech_bubble.svg.png" Height="400" Stretch="Fill"/>
+
+            <TextBlock
+                Text="Murka?? that's not yours!" 
+                FontSize="40"
+                Height="270"
+                Margin="10 20 10 10"
+                TextAlignment="Center"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                TextWrapping="Wrap"
+                Width="180"/>
+        </Grid>
+
+        <Grid x:Name="gridDialogCat" Grid.Column="2"/>
+
+        <Grid Grid.Column="1" Name="mainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="6*" />
+            </Grid.RowDefinitions>
+
+            <Grid Name="gridSurprisePart">
+                <TextBlock x:Name="tbFirstMessage" Text="Happy birthday!"
+                    FontSize="40"
+                    Height="100"
+                    Width="400"
+                    Margin="10 50 10 10"
+                    TextAlignment="Center"
+                    TextWrapping="Wrap"
+                    VerticalAlignment="Top"/>
+            </Grid>
+
+            <Button VerticalAlignment="Bottom" Grid.Row="1"
                 BorderThickness="0"
                 Height="300"
                 Width="300"
                 Background="Transparent"
                 Margin="10,10,10,30"
+                Grid.Column="1"
                 Click="Button_Click">
-            <Image Name="imgPresent" Stretch="Uniform" Source="/Images/25620864.jpg" />
-        </Button>
+                <Image Name="imgPresent" Stretch="Uniform" Source="/Images/25620864.jpg" />
+            </Button>
+        </Grid>
 
     </Grid>
 </Window>

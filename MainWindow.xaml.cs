@@ -1,4 +1,5 @@
-﻿using System.Media;
+﻿using System.DirectoryServices.ActiveDirectory;
+using System.Media;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -27,11 +28,10 @@ public partial class MainWindow : Window
         await Task.Delay(1000);
 
         PlayMusic();
-
-        var uri = new Uri("pack://application:,,,/MaimunasGift;component/Images/gift_opened.png");
-
+        
+        var uri = new Uri("pack://application:,,,/MaimunasGift;component/Images/gift_PNG100279.png");
         imgPresent.Source = new BitmapImage(uri);
 
-        TestBlock1.Text = "Murka?? That's not yours!";
+        tbFirstMessage.Text = "Murka?? That's not yours!";
     }
 }
