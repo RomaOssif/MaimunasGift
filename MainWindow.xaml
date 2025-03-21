@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MaimunasGift"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="1000" ResizeMode="CanMinimize"
+        Icon="/Images/25620864_kEm_icon.ico"
+        Top="160"
+        Left="360">
     <Grid>
+        <TextBlock x:Name="TestBlock1" Text="Happy birthday!" 
+                   FontSize="40"
+                   Height="100"
+                   Width="500"
+                   Margin="50"
+                   TextAlignment="Center"
+                   VerticalAlignment="Top"/>
+        <Button VerticalAlignment="Bottom"
+                BorderThickness="0"
+                Height="300"
+                Width="300"
+                Background="Transparent"
+                Margin="10,10,10,30"
+                Click="Button_Click">
+            <Image Name="imgPresent" Stretch="Uniform" Source="/Images/25620864.jpg" />
+        </Button>
 
     </Grid>
 </Window>

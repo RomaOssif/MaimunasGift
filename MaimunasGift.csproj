@@ -8,4 +8,29 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\25620864.jpg" />
+    <None Remove="Images\25620864_kEm_icon.ico" />
+    <None Remove="Images\istockphoto-1346537713-612x612.jpg" />
+    <None Remove="Sounds\Deltarune-Chapter-2-OST--05---Queen.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\25620864.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\gift_opened.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\25620864_kEm_icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Sounds\Deltarune-Chapter-2-OST--05---Queen.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\istockphoto-1346537713-612x612.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
